@@ -89,6 +89,8 @@ def get_card_string(card):
 
 
 def initial_deal(player, dealer):
+    if len(deck) < 26:
+        build_deck()
     for _ in range(2):
         deal_card(player)
         deal_card(dealer)

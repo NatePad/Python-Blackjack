@@ -38,9 +38,6 @@ while play_again:
     clear()
     print(logo)
 
-    if len(cards.deck) < 26:
-        cards.build_deck()
-    
     # INITIAL DEAL
     cards.initial_deal(player, dealer)
 
