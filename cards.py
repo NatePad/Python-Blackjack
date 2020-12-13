@@ -75,9 +75,9 @@ def get_hand_val(hand):
             value += card['value']
 
     if ace_count > 0:
-        value += ace_count + 10
-        if value > 21:
-            value -= 10
+        value += ace_count
+        if value < 12:
+            value += 10
 
     return value
 
